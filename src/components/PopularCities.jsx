@@ -11,7 +11,7 @@ const PopularCities = () => {
     "Sydney",
     "Casablanca",
   ];
-  const apiKey = "50125c23cc02daf927baf57603776551";
+  const apiKey = import.meta.env.VITE_OPENWEATHER_API_KEY;
 
   useEffect(() => {
     const fetchWeather = async () => {
